@@ -1,0 +1,30 @@
+.error-content {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.error-content h1 {
+	text-align: center;
+	font-size: 288px;
+	font-weight: 700;
+	margin: 5rem 10rem;
+	color: #FF6060;
+}
+
+.error-content h2 {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 10rem;
+	color: #FF6060;
+}
+
+.error-content .link {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 26px;
+	font-weight: 500;
+	color: #FF6060;
+}

@@ -1,0 +1,17 @@
+.footer {
+	margin-top: 5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	background-color: black;
+}
+
+.footer img {
+	width: 122px;
+	height: 40px;
+	margin-top: 2rem;
+}
+
+.footer p {
+	color: white;
+}
