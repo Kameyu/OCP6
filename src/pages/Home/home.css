@@ -4,7 +4,10 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 3rem 3.5rem;
-	padding: 3rem 2rem;
+	padding: 3.5rem 3rem;
+	max-width: 1440px;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .main-container p {

@@ -1,6 +1,6 @@
-import "../../utils/styles/header.css";
+import "./header.css";
 import Logo from "../../assets/header_logo.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 function Header() {
@@ -12,19 +12,19 @@ function Header() {
 				<img src={Logo} alt="Logo Kasa" />
 			</Link>
 			<nav>
-				<Link
+				<NavLink
 					className={`link${
 						location === '/' ? " underline" : ""
 					}`}
 					to="/"
 				>
 					Accueil
-				</Link>
-				<Link className={`link${
+				</NavLink>
+				<NavLink className={`link${
 						location === '/apropos' ? " underline" : ""
 					}`} to="apropos">
 					A Propos
-				</Link>
+				</NavLink>
 			</nav>
 		</header>
 	);
