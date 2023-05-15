@@ -1,4 +1,4 @@
-main {
+.logement-main {
 	max-width: 1440px;
 	margin: 1rem auto;
 	color: #FF6060;
@@ -7,13 +7,13 @@ main {
 .info-container {
 	display: flex;
 	flex-flow: row nowrap;
-	margin-top: 1rem;
+	margin: 1rem 6.25rem;
 	justify-content: space-between;
 	align-items: space-between;
 }
 
 .info-container .description h1 {
-	margin: 1rem 0;
+	margin: 0;
 	font-size: 36px;
 	font-weight: 500;
 }
@@ -55,15 +55,27 @@ main {
 	display: flex;
 	flex-flow: row nowrap;
 	gap: 2em;
+	margin: 2rem 6.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.info-container .description h1 {
+		font-size: 28px;
+	}
+
+	.info-container .description p {
+		font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 425px) {
-	main {
+	.logement-main {
 		margin: 1rem 1.2rem;
 	}
 
 	.info-container {
 		flex-direction: column;
+		margin: 0;
 	}
 
 	.info-container .description h1 {
@@ -89,6 +101,7 @@ main {
 	}
 
 	.info-collapses-container {
+		margin: 0;
 		flex-direction: column;
 		gap: 1rem;
 	}

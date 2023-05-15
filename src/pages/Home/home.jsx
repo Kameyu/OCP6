@@ -16,14 +16,19 @@ function Home() {
 					bannerAlt="Plage sur une côte rocheuse"
 				/>
 			</div>
-			<main className="main-container">
-				{Logements.map((logement) => {
-					return (
-						<Link key={logement.id} to={`logement/${logement.id}`}>
-							<Card logement={logement} />
-						</Link>
-					);
-				})}
+			<main className="home-main">
+				<div className="main-container">
+					{Logements.map((logement) => {
+						return (
+							<Link
+								key={logement.id}
+								to={`logement/${logement.id}`}
+							>
+								<Card logement={logement} />
+							</Link>
+						);
+					})}
+				</div>
 			</main>
 		</React.Fragment>
 	);

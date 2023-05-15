@@ -7,25 +7,30 @@ function Header() {
 	const location = useLocation().pathname;
 
 	return (
-		<header className="header">
-			<Link to="/">
-				<img src={Logo} alt="Logo Kasa" />
-			</Link>
-			<nav>
-				<NavLink
-					className={`link${
-						location === '/' ? " underline" : ""
-					}`}
-					to="/"
-				>
-					Accueil
-				</NavLink>
-				<NavLink className={`link${
-						location === '/apropos' ? " underline" : ""
-					}`} to="apropos">
-					A Propos
-				</NavLink>
-			</nav>
+		<header>
+			<div className="header-container">
+				<Link to="/">
+					<img src={Logo} alt="Logo Kasa" />
+				</Link>
+				<nav>
+					<NavLink
+						className={`link${
+							location === "/" ? " underline" : ""
+						}`}
+						to="/"
+					>
+						Accueil
+					</NavLink>
+					<NavLink
+						className={`link${
+							location === "/apropos" ? " underline" : ""
+						}`}
+						to="apropos"
+					>
+						A Propos
+					</NavLink>
+				</nav>
+			</div>
 		</header>
 	);
 }

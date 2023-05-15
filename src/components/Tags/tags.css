@@ -16,6 +16,12 @@
 	border-radius: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+	.tag-list {
+		gap: 1rem;
+	}
+}
+
 @media screen and (max-width: 425px) {
 	.tag-list {
 		gap: .5rem;

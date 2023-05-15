@@ -15,16 +15,18 @@ function Apropos() {
 					bannerAlt="Vue sur une région montagneuse avec une rivière"
 				/>
 			</div>
-			<main className="about-container">
-				{About.map((item) => {
-					return (
-						<Collapse
-							key={item.title}
-							title={item.title}
-							content={item.content}
-						/>
-					);
-				})}
+			<main className="about-main">
+				<div className="about-container">
+					{About.map((item) => {
+						return (
+							<Collapse
+								key={item.title}
+								title={item.title}
+								content={item.content}
+							/>
+						);
+					})}
+				</div>
 			</main>
 		</React.Fragment>
 	);

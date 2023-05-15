@@ -1,12 +1,18 @@
+.about-main {
+	margin: 0 auto;
+}
+
 .about-container {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	max-width: 1440px;
-	margin: 0 auto;
-	padding: 0 6.5rem;
+	margin: 1rem 6.25rem;
 	gap: 1.5rem;
 	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 425px) {

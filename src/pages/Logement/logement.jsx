@@ -11,7 +11,7 @@ function Logement() {
 	const logement = LogementList.find((logement) => logement.id === id);
 
 	return (
-		<main>
+		<main className="logement-main">
 			{logement === undefined ? (
 				<Navigate to="/404" />
 			) : (
