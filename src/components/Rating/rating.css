@@ -1,0 +1,25 @@
+.stars-container {
+	margin: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+	gap: 1rem;
+}
+
+.star {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+@media screen and (max-width: 425px) {
+	.stars-container {
+		gap: .4rem;
+		order: -1;
+		padding: 0;
+	}
+
+	.star {
+		width: .8rem;
+		height: .8rem;
+	}
+}

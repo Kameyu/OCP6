@@ -28,3 +28,23 @@
 	font-weight: 500;
 	color: #FF6060;
 }
+
+@media screen and (max-width: 425px) {
+	.error-content h1 {
+		font-size: 96px;
+		margin-top: 10rem;
+		margin-bottom: 0;
+	}
+
+	.error-content h2 {
+		font-size: 18px;
+		width: 25ch;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.error-content .link {
+		font-size: 14px;
+		margin: 5em auto;
+	}
+}

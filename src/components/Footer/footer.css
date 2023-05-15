@@ -16,3 +16,9 @@
 .footer p {
 	color: white;
 }
+
+@media screen and (max-width: 425px) {
+	.footer {
+		margin-top: 2rem;
+	}
+}

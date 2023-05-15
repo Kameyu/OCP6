@@ -23,3 +23,22 @@
 .header .underline {
 	text-decoration: underline;
 }
+
+@media screen and (max-width: 425px) {
+	.header {
+		margin: 1rem 1.2rem;
+	}
+	
+	.header a img {
+		width: 9rem;
+	}
+
+	.header .link {
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	.header nav {
+		gap: .65rem;
+	}
+}

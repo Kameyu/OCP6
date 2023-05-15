@@ -35,3 +35,9 @@
 	max-width: 13ch;
 	padding: 1rem;
 }
+
+@media screen and (max-width: 425px) {
+	.card {
+		height: 16rem;
+	}
+}
