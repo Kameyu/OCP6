@@ -9,6 +9,7 @@
 	align-items: center;
 	max-width: 1440px;
 	margin: 1rem 6.25rem;
+	padding: 0 7rem;
 	gap: 1.5rem;
 	box-sizing: border-box;
 }
@@ -17,8 +18,12 @@
 }
 
 @media screen and (max-width: 425px) {
-	.about-container {
+	.about-main {
 		margin: 0 auto;
 		padding: 0 1.2rem;
+	}
+	.about-container {
+		margin: 0;
+		padding: 0;
 	}
 }

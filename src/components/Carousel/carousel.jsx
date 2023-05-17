@@ -23,18 +23,22 @@ function Carousel({ logement }) {
 	return (
 		<div className="carousel-container">
 			<img className="cover" src={picture} alt={logement.title} />
-			<img
-				onClick={previousPicture}
-				className="arrow left"
-				src={Arrow}
-				alt="Précédente"
-			/>
-			<img
-				onClick={nextPicture}
-				className="arrow right"
-				src={Arrow}
-				alt="Suivante"
-			/>
+			{pictures.length > 1 &&
+			<>
+				<img
+					onClick={previousPicture}
+					className="arrow left"
+					src={Arrow}
+					alt="Précédente"
+				/>
+				<span className="picture-number">{logement.pictures.indexOf(picture)+1}/{pictures.length}</span>
+				<img
+					onClick={nextPicture}
+					className="arrow right"
+					src={Arrow}
+					alt="Suivante"
+				/>
+			</>}
 		</div>
 	);
 }

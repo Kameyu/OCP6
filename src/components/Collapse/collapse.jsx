@@ -1,5 +1,5 @@
 import "./collapse.css";
-import arrowUp from "../../assets/arrow_down.svg";
+import arrowDown from "../../assets/arrow_down.svg";
 import { useState } from "react";
 
 function Collapse({ title, content }) {
@@ -24,7 +24,7 @@ function Collapse({ title, content }) {
 				<h2>{title}</h2>
 				<img
 					onClick={(e) => toggleState(e, state)}
-					src={arrowUp}
+					src={arrowDown}
 					alt="Déplier"
 				/>
 			</div>
