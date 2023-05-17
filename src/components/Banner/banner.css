@@ -40,6 +40,12 @@
 	justify-content: center; /** X-axis align **/
 }
 
+@media screen and (max-width: 1024px) {
+	.banner-component .mask h1 {
+		font-size: 36px;
+	}
+}
+
 @media screen and (max-width: 425px) {
 	.banner-component {
 		height: 7rem;
